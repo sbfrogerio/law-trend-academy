@@ -108,6 +108,8 @@ summary{cursor:pointer;font-weight:800}
 .product-download{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding:10px 12px;background:#211831;border:1px solid #4a365f;border-radius:7px;font-size:.83rem;font-weight:800}
 .product-download .icon{color:var(--card-accent);width:17px;height:17px}
 .product-download:hover{background:#34234d;border-color:#8c63b9}
+.platform-downloads{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+.platform-downloads .product-download{width:auto;min-width:0;flex:1 1 124px;margin-top:0}
 .kit-download{display:flex;align-items:center;gap:17px;border:1px solid #5b3b7f;border-radius:13px;padding:23px;margin-top:20px;background:linear-gradient(110deg,#251739,#1d132f 70%,#2b1948)}
 .gift-icon{width:49px;height:49px;flex:none;display:grid;place-items:center;border-radius:9px;background:#4b2d70;color:#e2ceff}
 .gift-copy{flex:1}
@@ -241,7 +243,7 @@ summary{cursor:pointer;font-weight:800}
 .architect-path span{color:var(--card-accent);font:600 .68rem var(--mono)}
 .architect-path strong{font-size:.82rem;color:#f8ecff}
 .architect-path small{font-size:.74rem;color:var(--quiet)}
-.architect .product-download{width:min(100%,270px)}
+.architect .platform-downloads{width:min(100%,340px)}
 .use-case{border-bottom:1px solid #382b47;padding-bottom:11px}
 .use-case h4{margin:0 0 5px;font-size:.87rem;color:var(--card-accent)}
 .skill-name{display:block;margin:0 0 6px;font-size:.71rem;color:#c9bad8;overflow-wrap:anywhere}
