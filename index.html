@@ -12,8 +12,8 @@
   <meta property="og:image" content="https://sbfrogerio.github.io/law-trend-academy/assets/slide-law-trend.png">
   <title>IA e o Advogado do Futuro | Kit Law Trend</title>
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
-  <script src="site.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=kit-48h">
+  <script src="site.js?v=kit-48h" defer></script>
 </head>
 <body>
   <a class="skip" href="#conteudo">Ir para o conteúdo</a>
@@ -28,6 +28,7 @@
     <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 7c-2-3-6-4-10-3v14c4-1 8 0 10 3 2-3 6-4 10-3V4c-4-1-8 0-10 3Zm0 0v14M5 8l4 1m-4 3 4 1m6-4 4-1m-4 5 4-1"/></symbol>
     <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2Z"/></symbol>
     <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
   </svg>
   <header class="top">
     <nav class="shell nav" aria-label="Navegação principal">
@@ -73,6 +74,19 @@
           <div><p class="eyebrow"><span class="number">02 /</span> BRINDE DA LAW TREND</p><h2 id="kit-titulo">Seu kit de <em>IA aplicada.</em></h2></div>
           <p>Três plugins para quem participou da palestra. Escolha o seu primeiro teste ou leve o kit inteiro.</p>
         </div>
+        <aside class="launch" aria-label="Janela de lançamento do kit">
+          <span class="launch-icon" aria-hidden="true"><svg class="icon"><use href="#i-clock"/></svg></span>
+          <div class="launch-copy">
+            <h3 id="launch-title">48 horas de lançamento</h3>
+            <p id="launch-message">Aproveite o embalo da palestra para baixar o kit e testar um dos exemplos.</p>
+            <p class="launch-date">Até <time id="launch-deadline" datetime="2026-11-12T13:50:00Z">12/11/2026 às 10h50, horário de Maceió</time>.</p>
+          </div>
+          <div id="launch-countdown" class="launch-countdown" role="timer" aria-live="off" hidden>
+            <div><b data-clock-hours>00</b><span>horas</span></div>
+            <div><b data-clock-minutes>00</b><span>min</span></div>
+            <div><b data-clock-seconds>00</b><span>seg</span></div>
+          </div>
+        </aside>
         <div class="product-grid">
           <article class="product juris">
             <div class="product-visual" aria-hidden="true"><span class="product-index">01 / PESQUISA</span><div class="product-orbit"></div><svg class="icon product-icon"><use href="#i-source"/></svg></div>
@@ -80,7 +94,16 @@
               <h3>JurisConsulto Digital</h3>
               <p class="product-promise">Fundamente sua tese com fontes que você consegue conferir.</p>
               <p>Use antes de citar um julgado ou fechar uma peça. Pesquise jurisprudência favorável e contrária, confira um precedente em fonte oficial ou audite as citações de uma minuta.</p>
-              <details><summary>Exemplo para testar</summary><div class="example"><p>“Confira este precedente e diga o que o tribunal decidiu, se o caso se aplica à minha tese e onde posso ler a decisão oficial.”</p></div></details>
+              <details class="product-details">
+                <summary>O que dá para fazer · 3 exemplos</summary>
+                <div class="example">
+                  <div class="use-case"><h4>Pesquisar uma tese</h4><code class="skill-name">relatorio-jurisprudencia</code><p>Monte um relatório com decisões favoráveis e contrárias e veja quais diferenças de fato mudam a aplicação do precedente.</p><p class="prompt-example" id="pedido-juris-1">Pesquise jurisprudência do STJ sobre a responsabilidade por fraude em transações bancárias. Separe decisões favoráveis e contrárias à tese, explique os fatos decisivos e indique os links oficiais.</p><button type="button" class="copy-button" data-copy="pedido-juris-1"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar pedido</span></button></div>
+                  <div class="use-case"><h4>Conferir um precedente</h4><code class="skill-name">verificar-precedente</code><p>Confira o inteiro teor, a identificação do julgado e se a frase citada corresponde à fonte oficial.</p><p class="prompt-example" id="pedido-juris-2">Confira a referência e o trecho que vou colar. Compare o texto com o inteiro teor oficial e indique o que foi possível confirmar e o que ficou pendente.</p><button type="button" class="copy-button" data-copy="pedido-juris-2"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar pedido</span></button></div>
+                  <div class="use-case"><h4>Auditar uma peça</h4><code class="skill-name">auditar-citacoes</code><p>Revise as referências de uma minuta em tabela, com risco, evidência oficial e ação de correção.</p><p class="prompt-example" id="pedido-juris-3">Audite as citações desta minuta anonimizada. Para cada referência, informe fonte oficial, status da verificação e o ajuste necessário antes do protocolo.</p><button type="button" class="copy-button" data-copy="pedido-juris-3"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar pedido</span></button></div>
+                  <p class="product-activation"><strong>Para ativar o primeiro exemplo</strong><br>ChatGPT · digite <code>@</code> e procure <code>jurisconsulto-digital</code>.<br>Claude · abra <code>/</code> e escolha <code>relatorio-jurisprudencia</code>.<br>Claude Code · <code>/jurisconsulto-digital:relatorio-jurisprudencia</code><br>Codex · selecione <code>$relatorio-jurisprudencia</code>.</p>
+                  <p class="product-note">Use material anonimizado. Se o chat não tiver navegação, envie as fontes oficiais que você já tem.</p>
+                </div>
+              </details>
               <a class="product-download" href="downloads/jurisconsulto-digital.zip" download>Baixar JurisConsulto <svg class="icon"><use href="#i-down"/></svg></a>
             </div>
           </article>
@@ -90,7 +113,15 @@
               <h3>Acto Didático</h3>
               <p class="product-promise">Transforme uma aula em material que dá vontade de revisitar.</p>
               <p>Comece com transcrição, tópicos ou anotações. A ferramenta pergunta o que falta, estrutura o registro e permite auditar a fidelidade ou criar um guia visual em HTML.</p>
-              <details><summary>Exemplo para testar</summary><div class="example"><p>“Organize minhas anotações sobre esta aula de processo civil. Primeiro, faça as perguntas necessárias para completar o registro.”</p></div></details>
+              <details class="product-details">
+                <summary>Da aula ao material de estudo · 3 exemplos</summary>
+                <div class="example">
+                  <div class="use-case"><h4>Registrar uma aula ou treinamento</h4><code class="skill-name">registro-aula</code><p>Envie tópicos, anotações ou uma transcrição autorizada. Responda ao questionário breve antes de receber o registro estruturado.</p><p class="prompt-example" id="pedido-acto-1">Organize minhas anotações de um treinamento sobre proteção de dados. Classifique a atividade e comece pelo questionário sobre tarefas, avisos e lacunas.</p><button type="button" class="copy-button" data-copy="pedido-acto-1"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar pedido</span></button></div>
+                  <div class="use-case"><h4>Auditar o registro</h4><code class="skill-name">auditar-registro</code><p>Compare a síntese com a fonte e confira prazos, tarefas, possíveis invenções e dados pessoais desnecessários.</p><p class="prompt-example" id="pedido-acto-2">Compare este registro com minhas anotações. Liste divergências, prazos sem confirmação e lacunas que precisam de revisão.</p><button type="button" class="copy-button" data-copy="pedido-acto-2"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar pedido</span></button></div>
+                  <div class="use-case"><h4>Montar um guia visual</h4><code class="skill-name">registro-visual-html</code><p>Use o registro consolidado para criar um guia interativo, uma apresentação ou um documento em HTML.</p><p class="prompt-example" id="pedido-acto-3">Transforme este registro já revisado em um guia HTML para a equipe. Mantenha as tarefas, os prazos e os avisos confirmados.</p><button type="button" class="copy-button" data-copy="pedido-acto-3"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar pedido</span></button></div>
+                  <p class="product-activation"><strong>Para ativar o primeiro exemplo</strong><br>ChatGPT · digite <code>@</code> e procure <code>acto-didatico-registro-aula</code>.<br>Claude · abra <code>/</code> e escolha <code>registro-aula</code>.<br>Claude Code · <code>/acto-didatico-registro-aula:registro-aula</code><br>Codex · selecione <code>$registro-aula</code>.</p>
+                </div>
+              </details>
               <a class="product-download" href="downloads/acto-didatico-registro-aula.zip" download>Baixar Acto Didático <svg class="icon"><use href="#i-down"/></svg></a>
             </div>
           </article>
@@ -100,7 +131,15 @@
               <h3>Arquiteto de Prompts</h3>
               <p class="product-promise">Dê forma a uma ideia antes de pedir que a IA execute.</p>
               <p>Crie, revise e teste instruções para diferentes IAs. Comece com uma tarefa cotidiana ou desenhe os prompts de um projeto que envolve uma equipe inteira.</p>
-              <details><summary>Do simples ao ambicioso</summary><div class="example"><p><strong>Em 5 minutos</strong> “Crie um prompt que transforme notas de reunião em decisões e próximos passos.”</p><p><strong>Em escala</strong> “Desenhe os prompts de uma central de triagem jurídica, com critérios, testes e pontos de revisão humana.”</p></div></details>
+              <details class="product-details">
+                <summary>Do pedido simples ao fluxo completo · 3 exemplos</summary>
+                <div class="example">
+                  <div class="use-case"><h4>Criar um prompt</h4><code class="skill-name">arquiteto-de-prompts-full</code><p>Parta de uma tarefa concreta e receba instruções reutilizáveis com entradas, formato de saída e critérios claros.</p><p class="prompt-example" id="pedido-arq-1">Crie um prompt para transformar notas de reunião em um e-mail com decisões, responsáveis e prazos. Sinalize responsáveis e datas que faltarem.</p><button type="button" class="copy-button" data-copy="pedido-arq-1"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar pedido</span></button></div>
+                  <div class="use-case"><h4>Revisar ou adaptar instruções</h4><code class="skill-name">arquiteto-de-prompts-full</code><p>Cole um prompt que vem dando respostas vagas. Peça um diagnóstico, uma reescrita ou uma adaptação para outro modelo.</p><p class="prompt-example" id="pedido-arq-2">Revise o prompt que vou colar. Identifique instruções conflitantes, entregue uma versão concisa e proponha dois testes com dados fictícios.</p><button type="button" class="copy-button" data-copy="pedido-arq-2"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar pedido</span></button></div>
+                  <div class="use-case"><h4>Desenhar um fluxo em equipe</h4><code class="skill-name">arquiteto-de-prompts-full</code><p>Separe um trabalho maior em etapas e peça prompts com critérios e casos de teste para cada uma.</p><p class="prompt-example" id="pedido-arq-3">Desenhe os prompts de uma triagem contratual. Separe extração de cláusulas, sinalização de riscos e revisão humana. Inclua um teste com informação ausente.</p><button type="button" class="copy-button" data-copy="pedido-arq-3"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar pedido</span></button></div>
+                  <p class="product-activation"><strong>Para ativar o primeiro exemplo</strong><br>ChatGPT · digite <code>@</code> e procure Arquiteto de Prompts - Full.<br>Claude · abra <code>/</code> e escolha <code>arquiteto-de-prompts-full</code>.<br>Claude Code · <code>/arquiteto-de-prompts-full:arquiteto-de-prompts-full</code><br>Codex · selecione <code>$arquiteto-de-prompts-full</code>.</p>
+                </div>
+              </details>
               <a class="product-download" href="downloads/arquiteto-de-prompts-full.zip" download>Baixar Arquiteto <svg class="icon"><use href="#i-down"/></svg></a>
             </div>
           </article>
@@ -118,13 +157,19 @@
         <div class="section-heading"><div><p class="eyebrow"><span class="number">03 /</span> PRIMEIRO USO</p><h2 id="instalar-titulo">Do ZIP ao primeiro teste.</h2></div><p>Baixe e extraia o kit ou o pacote de uma ferramenta. Depois, siga o caminho da sua plataforma.</p></div>
         <div class="install-grid">
           <article class="install-card"><div class="install-title"><h3>ChatGPT</h3><span class="badge">RECOMENDADO</span></div>
-            <ol><li>Baixe o <strong>guia para usar no chat (.md)</strong> da ferramenta na lista abaixo.</li><li>Anexe o arquivo ou cole o conteúdo no ChatGPT. Descreva a tarefa e peça para aplicar as instruções.</li><li>Se seu workspace oferece Skills, vá a <strong>Plugins → Skills → Criar → Enviar do computador</strong>. Envie o ZIP da skill escolhida.</li></ol>
-            <a class="reference" href="https://help.openai.com/en/articles/20001066-skills-in-chatgpt" target="_blank" rel="noopener noreferrer">Documentação do ChatGPT <svg class="icon"><use href="#i-external"/></svg></a>
+            <ol><li>Com o plugin disponível na sua conta, digite <code>@</code> no campo de mensagem e <strong>selecione a ferramenta no menu</strong>. Em seguida, cole o pedido de um exemplo acima.</li><li>Se seu workspace oferece Skills, envie o ZIP avulso em <strong>Plugins → Skills → Criar → Enviar do computador</strong>. Na conversa, digite <code>@</code> e selecione a skill, por exemplo <code>verificar-precedente</code>.</li><li>Se a ferramenta não aparecer no menu, baixe o <strong>guia .md</strong> abaixo. Anexe-o ou cole as instruções e envie o pedido de exemplo junto.</li></ol>
+            <p class="platform-sources"><a class="reference" href="https://help.openai.com/en/articles/20001256-plugins-in-chatgpt" target="_blank" rel="noopener noreferrer">Plugins no ChatGPT ↗</a> <a class="reference" href="https://help.openai.com/en/articles/20001066-skills-in-chatgpt" target="_blank" rel="noopener noreferrer">Skills no ChatGPT ↗</a></p>
           </article>
           <article class="install-card"><div class="install-title"><h3>Claude</h3><span class="badge muted">COMPATÍVEL</span></div>
-            <ol><li>Abra <strong>Plugins</strong> no menu lateral. Em algumas contas, o caminho aparece como <strong>Personalizar → Skills</strong>.</li><li>Adicione uma skill e envie o ZIP individual correspondente. Ative a execução de código e a criação de arquivos se o Claude solicitar.</li><li>Inicie uma conversa e peça o fluxo pelo nome. Você também pode anexar o guia Markdown e usá-lo na conversa.</li></ol>
-            <a class="reference" href="https://support.claude.com/en/articles/12512180-use-skills-in-claude" target="_blank" rel="noopener noreferrer">Documentação do Claude <svg class="icon"><use href="#i-external"/></svg></a>
+            <ol><li>Abra <strong>Plugins</strong> no menu lateral. Em algumas contas, o caminho aparece como <strong>Personalizar → Skills</strong>.</li><li>Adicione o plugin ou envie o ZIP da skill avulsa. Ative a execução de código e a criação de arquivos se a plataforma solicitar.</li><li>Na conversa, digite <code>/</code> ou abra <code>+</code>, selecione a skill disponível e envie o pedido. Se ela não aparecer no menu, peça pelo nome ou anexe o guia .md.</li></ol>
+            <p class="platform-sources"><a class="reference" href="https://support.claude.com/en/articles/13837440-use-plugins-in-claude" target="_blank" rel="noopener noreferrer">Plugins no Claude ↗</a> <a class="reference" href="https://support.claude.com/en/articles/12512180-use-skills-in-claude" target="_blank" rel="noopener noreferrer">Skills no Claude ↗</a></p>
           </article>
+        </div>
+        <div class="activation-note">
+          <h3>Copie o pedido. Selecione a ferramenta no chat.</h3>
+          <p>Os botões dos exemplos copiam o texto da tarefa. Para acionar uma ferramenta instalada, selecione-a primeiro com <code>@</code> no ChatGPT ou <code>/</code> no Claude. Se preferir usar o guia .md, envie as instruções e o pedido na mesma conversa.</p>
+          <p>No <strong>Claude Code</strong>, uma skill dentro de um plugin instalado pode aparecer como <code>/plugin:skill</code>. No <strong>Codex</strong>, digite <code>$</code> e selecione a skill, por exemplo <code>$auditar-citacoes</code>.</p>
+          <p class="platform-sources"><a class="reference" href="https://code.claude.com/docs/en/plugins" target="_blank" rel="noopener noreferrer">Plugins no Claude Code ↗</a> <a class="reference" href="https://developers.openai.com/blog/eval-skills" target="_blank" rel="noopener noreferrer">Ativação no Codex ↗</a></p>
         </div>
         <details class="file-list"><summary>Baixar guias para usar no chat e skills avulsas</summary><div class="file-groups"><div><h4>JurisConsulto Digital</h4><a href="downloads/jurisconsulto-digital-modo-manual.md" download>Guia para usar no chat (.md)</a><a href="downloads/skills/relatorio-jurisprudencia.zip" download>Relatório de jurisprudência (.zip)</a><a href="downloads/skills/verificar-precedente.zip" download>Verificar precedente (.zip)</a><a href="downloads/skills/auditar-citacoes.zip" download>Auditar citações (.zip)</a></div><div><h4>Acto Didático</h4><a href="downloads/acto-didatico-registro-aula-modo-manual.md" download>Guia para usar no chat (.md)</a><a href="downloads/skills/registro-aula.zip" download>Registrar aula (.zip)</a><a href="downloads/skills/auditar-registro.zip" download>Auditar registro (.zip)</a><a href="downloads/skills/registro-visual-html.zip" download>Criar guia visual em HTML (.zip)</a></div><div><h4>Arquiteto de Prompts</h4><a href="downloads/arquiteto-de-prompts-full-modo-manual.md" download>Guia para usar no chat (.md)</a><a href="downloads/skills/arquiteto-de-prompts-full.zip" download>Arquiteto de Prompts Full (.zip)</a></div></div></details>
         <details class="file-list"><summary>Instalar o plugin completo</summary>
@@ -134,7 +179,7 @@
             <div><h4>Claude</h4><p>Com o upload de plugins habilitado, envie o ZIP avulso em Plugins → Adicionar.</p><a href="https://support.claude.com/en/articles/13837440-use-plugins-in-claude" target="_blank" rel="noopener noreferrer">Ajuda do Claude ↗</a></div>
           </div>
         </details>
-        <div class="practice"><div><p class="eyebrow">TESTE EM 1 MINUTO</p><h3>Traga uma tarefa real.</h3></div><div><p id="starter-text">Aplique as instruções da ferramenta anexada. Quero que você me ajude a resolver esta tarefa: [descreva a tarefa e o resultado esperado].</p><button type="button" class="copy-button" data-copy="starter-text"><svg class="icon"><use href="#i-copy"/></svg> Copiar pedido inicial</button></div></div>
+        <div class="practice"><div><p class="eyebrow">TESTE EM 1 MINUTO</p><h3>Traga uma tarefa real.</h3></div><div><p id="starter-text">Aplique as instruções da ferramenta anexada. Quero que você me ajude a resolver esta tarefa: [descreva a tarefa e o resultado esperado].</p><button type="button" class="copy-button" data-copy="starter-text"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar pedido inicial</span></button></div></div>
         <p class="review-note">Na prática jurídica, preserve o sigilo, revise as respostas e confira as fontes oficiais antes de citar. <a class="reference" href="https://www.oab.org.br/noticia/62711/confira-versao-final-da-recomendacao-do-cfoab-sobre-o-uso-de-ia-na-pratica-juridica" target="_blank" rel="noopener noreferrer">Recomendações do CFOAB ↗</a></p>
       </div>
     </section>
