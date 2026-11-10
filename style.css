@@ -137,6 +137,9 @@ summary{cursor:pointer;font-weight:800}
 .copy-button{display:inline-flex;align-items:center;gap:6px;color:#4b297c;background:none;border:0;padding:6px 0 0;font-weight:800;font-size:.78rem}
 .copy-button:hover{text-decoration:underline}
 .copy-button .icon{width:14px;height:14px}
+.assisted-install .install-card ol{flex:1}
+.assisted-prompt{max-width:none;padding:14px 16px;border:1px solid #e3d7f2;border-radius:8px;background:#f0e8fa;color:#433252;font-size:.88rem}
+.assisted-install .copy-button{align-self:flex-start;min-height:44px;padding-top:0}
 .presenter{background:#120e1e}
 .presenter-inner{display:grid;grid-template-columns:minmax(0,.84fr) minmax(0,1fr);gap:clamp(24px,7vw,108px);align-items:center}
 .portrait{position:relative;max-width:470px;border:1px solid #4c3664;border-radius:11px;overflow:hidden;background:#281b37}

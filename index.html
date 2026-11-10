@@ -12,7 +12,7 @@
   <meta property="og:image" content="https://sbfrogerio.github.io/law-trend-academy/assets/slide-law-trend.png">
   <title>IA e o Advogado do Futuro | Kit Law Trend</title>
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=zip-plataformas">
+  <link rel="stylesheet" href="style.css?v=instalacao-assistida">
   <script src="site.js?v=kit-destaque" defer></script>
 </head>
 <body>
@@ -193,13 +193,14 @@
             <p class="platform-sources"><a class="reference" href="https://support.claude.com/en/articles/13837440-use-plugins-in-claude" target="_blank" rel="noopener noreferrer">Plugins no Claude ↗</a> <a class="reference" href="https://support.claude.com/en/articles/12512180-use-skills-in-claude" target="_blank" rel="noopener noreferrer">Skills no Claude ↗</a></p>
           </article>
         </div>
+        <p class="compat-note">Se o envio pela aba Plugins falhar, <a class="reference" href="#instalacao-assistida">tente pela conversa com a IA ↓</a></p>
         <div class="activation-note">
           <h3>Copie o pedido. Selecione a ferramenta no chat.</h3>
           <p>Os botões dos exemplos copiam o texto da tarefa. Para acionar uma ferramenta instalada, selecione-a primeiro com <code>@</code> no ChatGPT ou <code>/</code> no Claude. Se preferir usar o guia .md, envie as instruções e o pedido na mesma conversa.</p>
           <p>No <strong>Claude Code</strong>, uma skill dentro de um plugin instalado pode aparecer como <code>/plugin:skill</code>. No <strong>Codex</strong>, digite <code>$</code> e selecione a skill, por exemplo <code>$jurisconsulto-digital:auditar-citacoes</code>.</p>
           <p class="platform-sources"><a class="reference" href="https://code.claude.com/docs/en/plugins" target="_blank" rel="noopener noreferrer">Plugins no Claude Code ↗</a> <a class="reference" href="https://developers.openai.com/blog/eval-skills" target="_blank" rel="noopener noreferrer">Ativação no Codex ↗</a></p>
         </div>
-        <details class="file-list"><summary>Baixar guias para usar no chat e skills avulsas</summary><div class="file-groups"><div><h4>JurisConsulto Digital</h4><a href="downloads/jurisconsulto-digital-modo-manual.md" download>Guia para usar no chat (.md)</a><a href="downloads/skills/relatorio-jurisprudencia.zip" download>Relatório de jurisprudência (.zip)</a><a href="downloads/skills/verificar-precedente.zip" download>Verificar precedente (.zip)</a><a href="downloads/skills/auditar-citacoes.zip" download>Auditar citações (.zip)</a></div><div><h4>Acto Didático</h4><a href="downloads/acto-didatico-registro-aula-modo-manual.md" download>Guia para usar no chat (.md)</a><a href="downloads/skills/registro-aula.zip" download>Registrar aula (.zip)</a><a href="downloads/skills/auditar-registro.zip" download>Auditar registro (.zip)</a><a href="downloads/skills/registro-visual-html.zip" download>Criar guia visual em HTML (.zip)</a></div><div><h4>Arquiteto de Prompts</h4><a href="downloads/arquiteto-de-prompts-full-modo-manual.md" download>Guia para usar no chat (.md)</a><a href="downloads/skills/arquiteto-de-prompts-full.zip" download>Arquiteto de Prompts Full (.zip)</a></div></div></details>
+        <details class="file-list" id="guias-e-skills"><summary>Baixar guias para usar no chat e skills avulsas</summary><div class="file-groups"><div><h4>JurisConsulto Digital</h4><a href="downloads/jurisconsulto-digital-modo-manual.md" download>Guia para usar no chat (.md)</a><a href="downloads/skills/relatorio-jurisprudencia.zip" download>Relatório de jurisprudência (.zip)</a><a href="downloads/skills/verificar-precedente.zip" download>Verificar precedente (.zip)</a><a href="downloads/skills/auditar-citacoes.zip" download>Auditar citações (.zip)</a></div><div><h4>Acto Didático</h4><a href="downloads/acto-didatico-registro-aula-modo-manual.md" download>Guia para usar no chat (.md)</a><a href="downloads/skills/registro-aula.zip" download>Registrar aula (.zip)</a><a href="downloads/skills/auditar-registro.zip" download>Auditar registro (.zip)</a><a href="downloads/skills/registro-visual-html.zip" download>Criar guia visual em HTML (.zip)</a></div><div><h4>Arquiteto de Prompts</h4><a href="downloads/arquiteto-de-prompts-full-modo-manual.md" download>Guia para usar no chat (.md)</a><a href="downloads/skills/arquiteto-de-prompts-full.zip" download>Arquiteto de Prompts Full (.zip)</a></div></div></details>
         <details class="file-list"><summary>Opções para administradores e Codex local</summary>
           <div class="file-groups">
             <div><h4>ChatGPT</h4><p>Administradores com permissão de upload podem enviar o <strong>ZIP ChatGPT</strong> em Console de administração → Plugins → Adicionar → Enviar plugin.</p><a href="https://help.openai.com/en/articles/20001256-plugins-in-chatgpt" target="_blank" rel="noopener noreferrer">Ajuda para administradores ↗</a></div>
@@ -229,6 +230,40 @@
       <div class="shell share-inner">
         <div><p class="eyebrow"><span class="number">05 /</span> LEVE O KIT COM VOCÊ</p><h2 id="qr-titulo">Aponte a câmera.<br><em>Leve os três.</em></h2><p>O QR Code abre a seção de downloads. Na palestra, projete a versão em slide.</p><div class="share-links"><a class="text-link" href="assets/qr-law-trend.png" download>Baixar QR em PNG <svg class="icon"><use href="#i-down"/></svg></a><a class="text-link" href="assets/slide-law-trend.png" download>Baixar slide 16:9 <svg class="icon"><use href="#i-down"/></svg></a></div></div>
         <a class="qr" href="https://sbfrogerio.github.io/law-trend-academy/#kit" aria-label="Abrir o kit de downloads"><img src="assets/qr-law-trend.png" width="300" height="300" loading="lazy" alt="QR Code da página de downloads do kit Law Trend"></a>
+      </div>
+    </section>
+
+    <section class="section light assisted-install" id="instalacao-assistida" aria-labelledby="assistida-titulo">
+      <div class="shell">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span class="number">06 /</span> INSTALAÇÃO ALTERNATIVA</p><h2 id="assistida-titulo">O ZIP deu erro?</h2></div>
+          <p>Peça ajuda à própria IA. Na <a class="reference" href="#kit">seção de ferramentas</a>, baixe os três ZIPs individuais da sua plataforma. Anexe os arquivos à conversa e use a mensagem abaixo.</p>
+        </div>
+        <div class="install-grid">
+          <article class="install-card">
+            <div class="install-title"><h3>ChatGPT</h3><span class="badge">PLUGIN CREATOR</span></div>
+            <ol>
+              <li>Abra o <a class="reference" href="https://chatgpt.com/plugins/plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e?open_in_app=" target="_blank" rel="noopener noreferrer">Plugin Creator ↗</a> no diretório e instale-o se solicitado.</li>
+              <li>Em uma nova conversa, digite <code>@</code>, selecione <strong>Plugin Creator</strong> no menu, anexe os três arquivos <strong>ZIP ChatGPT</strong> e cole a mensagem.</li>
+              <li>Abra os links que o ChatGPT devolver e selecione <strong>Instalar</strong> se aparecer um cartão de confirmação.</li>
+            </ol>
+            <p class="assisted-prompt" id="pedido-instalar-chatgpt">Use o Plugin Creator para importar os ZIPs anexados do Acto Didático, do JurisConsulto Digital e do Arquiteto de Prompts. Processe um ZIP por vez. Valide cada manifesto e preserve todas as habilidades e arquivos de apoio. Se minha conta permitir, salve cada pacote como plugin privado. Para cada um, envie o link, informe se a instalação exige minha confirmação e, se houver erro, mostre a mensagem exata e o próximo passo.</p>
+            <button type="button" class="copy-button" data-copy="pedido-instalar-chatgpt"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar mensagem para ChatGPT</span></button>
+            <p class="platform-sources"><a class="reference" href="https://help.openai.com/en/articles/20001256-plugins-in-chatgpt#create-plugins" target="_blank" rel="noopener noreferrer">Ajuda da OpenAI ↗</a></p>
+          </article>
+          <article class="install-card">
+            <div class="install-title"><h3>Claude</h3><span class="badge muted">COWORK</span></div>
+            <ol>
+              <li>Abra uma nova tarefa no <strong>Cowork</strong>, no aplicativo Claude Desktop.</li>
+              <li>Anexe os três arquivos <strong>ZIP Claude</strong> e cole a mensagem abaixo. O Claude prepara um arquivo <code>.plugin</code> para cada ferramenta.</li>
+              <li>Confira os arquivos e confirme a instalação de cada plugin no cartão da conversa, quando ele aparecer.</li>
+            </ol>
+            <p class="assisted-prompt" id="pedido-instalar-claude">Ajude-me a instalar os plugins do kit Law Trend que anexei em ZIP para Claude. O kit inclui Acto Didático, JurisConsulto Digital e Arquiteto de Prompts. Para cada ZIP recebido, valide o manifesto, preserve as habilidades e os arquivos de apoio e gere um .plugin separado, com .claude-plugin/plugin.json e skills/ na raiz. Mostre os arquivos no Cowork para eu confirmar a instalação. Se o cartão não aparecer, entregue os arquivos e indique como importá-los em Personalizar → Plugins.</p>
+            <button type="button" class="copy-button" data-copy="pedido-instalar-claude"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar mensagem para Claude</span></button>
+            <p class="platform-sources"><a class="reference" href="https://github.com/anthropics/knowledge-work-plugins/blob/main/cowork-plugin-management/skills/create-cowork-plugin/SKILL.md#phase-5-review--package" target="_blank" rel="noopener noreferrer">Empacotamento no Cowork ↗</a></p>
+          </article>
+        </div>
+        <p class="review-note">Se o chat limitar o número de anexos, envie um ZIP por vez. Se a conta ou o workspace bloquear a instalação, use os <a class="reference" href="#guias-e-skills">guias .md na conversa</a>.</p>
       </div>
     </section>
   </main>
