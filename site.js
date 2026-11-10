@@ -22,28 +22,38 @@ for (const button of document.querySelectorAll("[data-copy]")) {
 }
 
 const deadline = document.getElementById("launch-deadline");
-const countdown = document.getElementById("launch-countdown");
-const launchTitle = document.getElementById("launch-title");
-const launchMessage = document.getElementById("launch-message");
 const launchEnd = Date.parse(deadline.dateTime);
-const clockHours = countdown.querySelector("[data-clock-hours]");
-const clockMinutes = countdown.querySelector("[data-clock-minutes]");
-const clockSeconds = countdown.querySelector("[data-clock-seconds]");
+const launchPanels = [...document.querySelectorAll("[data-launch]")].map(panel => ({
+  title: panel.querySelector("[data-launch-title]"),
+  message: panel.querySelector("[data-launch-message]"),
+  date: panel.querySelector("[data-launch-date]"),
+  countdown: panel.querySelector("[data-launch-countdown]"),
+  hours: panel.querySelector("[data-clock-hours]"),
+  minutes: panel.querySelector("[data-clock-minutes]"),
+  seconds: panel.querySelector("[data-clock-seconds]")
+}));
 const twoDigits = value => String(value).padStart(2, "0");
 
 function updateCountdown() {
   const secondsLeft = Math.ceil((launchEnd - Date.now()) / 1000);
   if (secondsLeft <= 0) {
-    countdown.hidden = true;
-    launchTitle.textContent = "Janela de lançamento encerrada";
-    launchMessage.textContent = "O kit continua disponível. Escolha uma ferramenta e faça o primeiro teste.";
-    deadline.parentElement.hidden = true;
+    for (const panel of launchPanels) {
+      panel.countdown.hidden = true;
+      panel.title.textContent = "Janela de lançamento encerrada";
+      panel.message.textContent = "O kit continua disponível. Escolha uma ferramenta e faça o primeiro teste.";
+      if (panel.date) panel.date.hidden = true;
+    }
     return false;
   }
-  clockHours.textContent = twoDigits(Math.floor(secondsLeft / 3600));
-  clockMinutes.textContent = twoDigits(Math.floor((secondsLeft % 3600) / 60));
-  clockSeconds.textContent = twoDigits(secondsLeft % 60);
-  countdown.hidden = false;
+  const hours = twoDigits(Math.floor(secondsLeft / 3600));
+  const minutes = twoDigits(Math.floor((secondsLeft % 3600) / 60));
+  const seconds = twoDigits(secondsLeft % 60);
+  for (const panel of launchPanels) {
+    panel.hours.textContent = hours;
+    panel.minutes.textContent = minutes;
+    panel.seconds.textContent = seconds;
+    panel.countdown.hidden = false;
+  }
   return true;
 }
 

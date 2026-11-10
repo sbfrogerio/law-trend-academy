@@ -12,8 +12,8 @@
   <meta property="og:image" content="https://sbfrogerio.github.io/law-trend-academy/assets/slide-law-trend.png">
   <title>IA e o Advogado do Futuro | Kit Law Trend</title>
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=kit-48h">
-  <script src="site.js?v=kit-48h" defer></script>
+  <link rel="stylesheet" href="style.css?v=kit-destaque">
+  <script src="site.js?v=kit-destaque" defer></script>
 </head>
 <body>
   <a class="skip" href="#conteudo">Ir para o conteúdo</a>
@@ -39,6 +39,20 @@
   </header>
   <main id="conteudo">
     <section class="hero" id="inicio" aria-labelledby="titulo">
+      <aside class="shell launch launch-feature" data-launch aria-label="Janela de lançamento do kit">
+        <span class="launch-icon" aria-hidden="true"><svg class="icon"><use href="#i-clock"/></svg></span>
+        <div class="launch-copy">
+          <p class="eyebrow launch-eyebrow">BRINDE DA LAW TREND</p>
+          <h2 data-launch-title>48 horas de lançamento</h2>
+          <p data-launch-message>Escolha uma ferramenta e faça seu primeiro teste.</p>
+          <p class="launch-date" data-launch-date>Até <time id="launch-deadline" datetime="2026-11-12T13:50:00Z">12/11/2026 às 10h50, horário de Maceió</time>.</p>
+        </div>
+        <div class="launch-countdown" data-launch-countdown role="timer" aria-label="Tempo restante da janela de lançamento" aria-live="off" hidden>
+          <div><b data-clock-hours>00</b><span>horas</span></div>
+          <div><b data-clock-minutes>00</b><span>min</span></div>
+          <div><b data-clock-seconds>00</b><span>seg</span></div>
+        </div>
+      </aside>
       <div class="shell hero-inner">
         <div class="hero-copy">
           <p class="eyebrow event"><span class="signal"></span> OAB LAW TREND ACADEMY <span class="eyebrow-divider"></span> MACEIÓ · 2026</p>
@@ -74,14 +88,13 @@
           <div><p class="eyebrow"><span class="number">02 /</span> BRINDE DA LAW TREND</p><h2 id="kit-titulo">Seu kit de <em>IA aplicada.</em></h2></div>
           <p>Três plugins para quem participou da palestra. Escolha o seu primeiro teste ou leve o kit inteiro.</p>
         </div>
-        <aside class="launch" aria-label="Janela de lançamento do kit">
+        <aside class="launch launch-kit" data-launch aria-label="Janela de lançamento do kit">
           <span class="launch-icon" aria-hidden="true"><svg class="icon"><use href="#i-clock"/></svg></span>
           <div class="launch-copy">
-            <h3 id="launch-title">48 horas de lançamento</h3>
-            <p id="launch-message">Aproveite o embalo da palestra para baixar o kit e testar um dos exemplos.</p>
-            <p class="launch-date">Até <time id="launch-deadline" datetime="2026-11-12T13:50:00Z">12/11/2026 às 10h50, horário de Maceió</time>.</p>
+            <h3 id="launch-title" data-launch-title>48 horas de lançamento</h3>
+            <p data-launch-message>Aproveite o embalo da palestra para baixar o kit e testar um dos exemplos.</p>
           </div>
-          <div id="launch-countdown" class="launch-countdown" role="timer" aria-live="off" hidden>
+          <div id="launch-countdown" class="launch-countdown" data-launch-countdown role="timer" aria-label="Tempo restante da janela de lançamento" aria-live="off" hidden>
             <div><b data-clock-hours>00</b><span>horas</span></div>
             <div><b data-clock-minutes>00</b><span>min</span></div>
             <div><b data-clock-seconds>00</b><span>seg</span></div>
@@ -126,18 +139,24 @@
             </div>
           </article>
           <article class="product architect">
-            <div class="product-visual" aria-hidden="true"><span class="product-index">03 / CRIAÇÃO</span><div class="product-orbit"></div><svg class="icon product-icon"><use href="#i-spark"/></svg></div>
+            <div class="product-visual" aria-hidden="true"><span class="product-index">03 / CONSTRUÇÃO COM IA</span><div class="product-orbit"></div><svg class="icon product-icon"><use href="#i-spark"/></svg></div>
             <div class="product-body">
               <h3>Arquiteto de Prompts</h3>
-              <p class="product-promise">Dê forma a uma ideia antes de pedir que a IA execute.</p>
-              <p>Crie, revise e teste instruções para diferentes IAs. Comece com uma tarefa cotidiana ou desenhe os prompts de um projeto que envolve uma equipe inteira.</p>
+              <p class="product-promise">O ponto de partida para construir com IA.</p>
+              <p>Descreva o que você quer fazer, mesmo que a ideia ainda esteja vaga. O Arquiteto ajuda a escolher o formato, refinar o escopo e preparar as instruções e os testes para um primeiro protótipo. Use esse processo para desenhar uma skill, um assistente, um agente ou um fluxo de automação.</p>
+              <ol class="architect-path" aria-label="Etapas para construir uma ferramenta com IA">
+                <li><span>01</span><strong>Descreva a ideia</strong><small>Quem vai usar e qual tarefa precisa resolver?</small></li>
+                <li><span>02</span><strong>Refine o escopo</strong><small>Quais dados entram e o que a ferramenta pode fazer?</small></li>
+                <li><span>03</span><strong>Prepare o primeiro teste</strong><small>Defina as instruções e o que conta como um bom resultado.</small></li>
+              </ol>
               <details class="product-details">
-                <summary>Do pedido simples ao fluxo completo · 3 exemplos</summary>
+                <summary>3 projetos para começar · skill, assistente e agente</summary>
                 <div class="example">
-                  <div class="use-case"><h4>Criar um prompt</h4><code class="skill-name">arquiteto-de-prompts-full</code><p>Parta de uma tarefa concreta e receba instruções reutilizáveis com entradas, formato de saída e critérios claros.</p><p class="prompt-example" id="pedido-arq-1">Crie um prompt para transformar notas de reunião em um e-mail com decisões, responsáveis e prazos. Sinalize responsáveis e datas que faltarem.</p><button type="button" class="copy-button" data-copy="pedido-arq-1"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar pedido</span></button></div>
-                  <div class="use-case"><h4>Revisar ou adaptar instruções</h4><code class="skill-name">arquiteto-de-prompts-full</code><p>Cole um prompt que vem dando respostas vagas. Peça um diagnóstico, uma reescrita ou uma adaptação para outro modelo.</p><p class="prompt-example" id="pedido-arq-2">Revise o prompt que vou colar. Identifique instruções conflitantes, entregue uma versão concisa e proponha dois testes com dados fictícios.</p><button type="button" class="copy-button" data-copy="pedido-arq-2"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar pedido</span></button></div>
-                  <div class="use-case"><h4>Desenhar um fluxo em equipe</h4><code class="skill-name">arquiteto-de-prompts-full</code><p>Separe um trabalho maior em etapas e peça prompts com critérios e casos de teste para cada uma.</p><p class="prompt-example" id="pedido-arq-3">Desenhe os prompts de uma triagem contratual. Separe extração de cláusulas, sinalização de riscos e revisão humana. Inclua um teste com informação ausente.</p><button type="button" class="copy-button" data-copy="pedido-arq-3"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar pedido</span></button></div>
-                  <p class="product-activation"><strong>Para ativar o primeiro exemplo</strong><br>ChatGPT · digite <code>@</code> e procure Arquiteto de Prompts - Full.<br>Claude · abra <code>/</code> e escolha <code>arquiteto-de-prompts-full</code>.<br>Claude Code · <code>/arquiteto-de-prompts-full:arquiteto-de-prompts-full</code><br>Codex · selecione <code>$arquiteto-de-prompts-full</code>.</p>
+                  <div class="use-case"><h4>Skill de atas de reunião</h4><p>Transforme uma tarefa recorrente em um procedimento que outra pessoa da equipe também consiga usar.</p><p class="prompt-example" id="pedido-arq-1">Quero criar uma skill que transforme notas de reunião em atas. Ajude-me a refinar o escopo e proponha um SKILL.md com instruções, formato da ata e regras para prazos ou responsáveis ausentes. Inclua dois testes com dados fictícios.</p><button type="button" class="copy-button" data-copy="pedido-arq-1"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar pedido</span></button></div>
+                  <div class="use-case"><h4>Assistente de preparação de audiência</h4><p>Desenhe uma conversa guiada que ajude a organizar a preparação de cada caso.</p><p class="prompt-example" id="pedido-arq-2">Quero um assistente para preparar audiências. Faça as perguntas que faltarem e proponha instruções para coletar contexto, organizar os fatos controvertidos e gerar um checklist de preparação. Inclua um exemplo fictício de conversa.</p><button type="button" class="copy-button" data-copy="pedido-arq-2"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar pedido</span></button></div>
+                  <div class="use-case"><h4>Agente de triagem contratual</h4><p>Planeje um fluxo em que a IA lê o documento, separa achados e encaminha os pontos que exigem decisão.</p><p class="prompt-example" id="pedido-arq-3">Ajude-me a desenhar um agente de triagem contratual. Separe leitura, extração de cláusulas e sinalização de riscos. Defina as ferramentas permitidas, quando pedir revisão humana e como testar um contrato incompleto. Entregue as instruções e um plano de protótipo.</p><button type="button" class="copy-button" data-copy="pedido-arq-3"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar pedido</span></button></div>
+                  <p class="product-activation"><strong>Para usar qualquer exemplo</strong><br>ChatGPT · digite <code>@</code> e procure Arquiteto de Prompts - Full.<br>Claude · abra <code>/</code> e escolha <code>arquiteto-de-prompts-full</code>.<br>Claude Code · <code>/arquiteto-de-prompts-full:arquiteto-de-prompts-full</code><br>Codex · selecione <code>$arquiteto-de-prompts-full</code>.</p>
+                  <p class="product-note">Você também pode revisar ou adaptar um prompt existente. A instalação, as integrações e as permissões dependem da plataforma escolhida.</p>
                 </div>
               </details>
               <a class="product-download" href="downloads/arquiteto-de-prompts-full.zip" download>Baixar Arquiteto <svg class="icon"><use href="#i-down"/></svg></a>
